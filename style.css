@@ -93,7 +93,7 @@ main .s1 .info div p {
   color: var(--main-typo-1);
 }
 main .s1 .info img {
-  width: 100%;
+  width: 80%;
   border-radius: 1000px;
 }
 main .s2 {
