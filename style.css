@@ -1,0 +1,127 @@
+:root {
+  --main-color-1: #6be16b;
+  --main-color-2: #35ca35;
+  --main-color-3: #2a9e2a;
+  --main-color-4: #b2e8b2;
+  --main-typo-1: #062304;
+  --main-typo-2: #0b3208;
+  --main-typo-3: #114a0d;
+  color: #21541e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: var(--main-color-4);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background-color: var(--main-color-1);
+}
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+nav div h1 {
+  font-size: 24px;
+  background: linear-gradient(45deg, var(--main-typo-1) 0%, var(--main-typo-3) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--main-typo-1);
+  font-size: 24px;
+}
+
+main section {
+  height: 100vh;
+}
+main .s1 {
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .s1 .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+main .s1 .info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .s1 .info div h2 {
+  font-size: 24px;
+  color: var(--main-typo-2);
+  margin-bottom: 24px;
+}
+main .s1 .info div p {
+  color: var(--main-typo-1);
+}
+main .s1 .info img {
+  width: 100%;
+  border-radius: 1000px;
+}
+main .s2 {
+  background-color: var(--main-color-1);
+  height: auto;
+}
+main .s2 h2 {
+  width: 100%;
+  background-color: var(--main-color-2);
+  color: var(--main-typo-2);
+  font-size: 40px;
+  padding: 50px 0;
+  text-align: center;
+}
+main .s2 .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 80px;
+}
+main .s2 .grid .project {
+  background-color: var(--main-color-3);
+  aspect-ratio: 1;
+}
+
+footer {
+  height: 35vh;
+  background-color: var(--main-color-1);
+}
+
+/*# sourceMappingURL=style.css.map */
