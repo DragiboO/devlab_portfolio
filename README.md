@@ -25,3 +25,12 @@ Steps :
 - Configure Project -> ```Deploy```
 
 Wait a bit and it's done, your deployment is finished.
+
+## Actions
+
+This repository has 3 actions running on it :
+
+- Checkly to view the deployement performance of the website
+- Imgbot to compress image files of this repository
+- CodeFactor to improve the code if there is issues
+
