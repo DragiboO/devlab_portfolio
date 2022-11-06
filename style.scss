@@ -22,6 +22,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -77,39 +78,69 @@ nav {
 main {
 
     section {
-        height: 100vh;
+        min-height: 30vh;
     }
 
     .s1 {
         padding: 0 80px;
+        background: linear-gradient(to right, rgba(118, 187, 96, 0.5) 35%, rgba(0, 0, 0, 0.8)), url("/img/clover.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20rem;
 
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                h2 {
-                    font-size: 24px;
-                    color: var(--typo-tittle);
-                    margin-bottom: 24px;
-                }
-
-                p {
-                    color: var(--typo-text);
-                }
+            h2 {
+                font-size: 48px;
+                color: #030f03;
             }
 
-            img {
-                width: 80%;
-                border-radius: 1000px;
+            .card {
+                display: flex;
+                gap: 0;
+                background-color: var(--main-color-2);
+                border-radius: 15px;
+                height: 400px;
+                margin: 10vh 0;
+                box-shadow: 0px 6px 15px 0px rgba(0,0,0,0.2);
+
+                .photo {
+                    width: 200px;
+                    height: 100%;
+                    border-radius: 15px 0 0 15px;
+                    background-image: url('img/portrait.jpg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .info {
+                    display: block;
+                    padding: 20px;
+
+                    h3 {
+                        font-size: 20px;
+                        color: var(--typo-tittle);
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 2px;
+                        margin: 30px 0;
+                        background-color: var(--typo-tittle);
+                    }
+
+                    p {
+                        color: var(--typo-text);
+                        padding-bottom: 10px;
+                    }
+                }
             }
         }
     }
