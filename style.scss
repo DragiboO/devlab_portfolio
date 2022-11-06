@@ -201,9 +201,52 @@ main {
             gap: 30px;
             padding: 80px;
 
+            
             .project {
-                background-color: black;
-                aspect-ratio: 1;
+                position: relative;
+                aspect-ratio: 16/9;
+                border-radius: 15px;
+            }
+            
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .info-project {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 15px;
+                position: relative;
+                z-index: 2;
+                transition: 0.2s ease-in;
+                opacity: 0;
+                background-color: var(--main-color-2);
+                border: 3px solid var(--typo-tittle);
+
+                h3 {
+                    color: var(--typo-tittle);
+                    font-size: 24px;
+                }
+
+                p {
+                    color: var(--typo-text);
+                }
+
+                a {
+                    color: var(--typo-tittle);
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }

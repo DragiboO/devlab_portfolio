@@ -164,8 +164,44 @@ main .s3 .grid {
   padding: 80px;
 }
 main .s3 .grid .project {
-  background-color: black;
-  aspect-ratio: 1;
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+}
+main .s3 .grid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main .s3 .grid .info-project {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+  transition: 0.2s ease-in;
+  opacity: 0;
+  background-color: var(--main-color-2);
+  border: 3px solid var(--typo-tittle);
+}
+main .s3 .grid .info-project h3 {
+  color: var(--typo-tittle);
+  font-size: 24px;
+}
+main .s3 .grid .info-project p {
+  color: var(--typo-text);
+}
+main .s3 .grid .info-project a {
+  color: var(--typo-tittle);
+}
+main .s3 .grid .info-project:hover {
+  opacity: 0.8;
 }
 
 footer {
