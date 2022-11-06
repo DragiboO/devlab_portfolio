@@ -2,6 +2,8 @@ r = document.querySelector(':root')
 mode = document.querySelector('.mode')
 modem = 0
 
+// Dark / Light mode
+
 function d_l_mode() {
 
     mode.addEventListener('click', function() {
