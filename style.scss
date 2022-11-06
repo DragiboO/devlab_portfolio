@@ -40,14 +40,30 @@ nav {
     padding: 15px 80px;
     background-color: var(--header-footer);
 
+    @media  screen and (max-width: 768px) {
+        padding: 10px 40px;
+    }
+
+    @media  screen and (max-width: 440px) {
+        padding: 10px 10px;
+    }
+
     div {
         display: flex;
         align-items: center;
         gap: 1.5rem;
 
+        @media  screen and (max-width: 460px) {
+            gap: 0.5rem;
+        }
+
         h1 {
             font-size: 24px;
             color: var(--typo-tittle);
+
+            @media  screen and (max-width: 360px) {
+                display: none;
+            }
         }
     }
 
@@ -61,6 +77,19 @@ nav {
     ul {
         display: flex;
         gap: 3rem;
+        
+        @media  screen and (max-width: 1024px) {
+            gap: 2rem;
+        }
+
+        @media  screen and (max-width: 768px) {
+            gap: 1rem;
+        }
+
+        @media  screen and (max-width: 650px) {
+            flex-direction: column;
+            gap: 0;
+        }
 
         li {
             list-style-type: none;
@@ -101,15 +130,35 @@ main {
         align-items: center;
         justify-content: center;
 
+        @media  screen and (max-width: 768px) {
+            padding: 0 40px;
+        }
+
+        @media  screen and (max-width: 440px) {
+            padding: 0 10px;
+        }
+
         div {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 20rem;
 
+            @media  screen and (max-width: 1024px) {
+                gap: 8rem;
+            }
+
+            @media  screen and (max-width: 768px) {
+                gap: 2rem;
+            }
+
             h4 {
                 font-size: 48px;
                 color: #030f03;
+
+                @media  screen and (max-width: 700px) {
+                    display: none;
+                }
             }
 
             .card {
@@ -129,11 +178,19 @@ main {
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
+
+                    @media  screen and (max-width: 370px) {
+                        width: 150px;
+                    }
                 }
 
                 .info {
                     display: block;
                     padding: 20px;
+
+                    @media  screen and (max-width: 370px) {
+                        padding: 10px;
+                    }
 
                     h3 {
                         font-size: 20px;
@@ -160,6 +217,14 @@ main {
         .skill {
             padding: 0 80px;
 
+            @media  screen and (max-width: 768px) {
+                padding: 0 40px;
+            }
+
+            @media  screen and (max-width: 440px) {
+                padding: 0 10px;
+            }
+
             h3 {
                 font-size: 24px;
                 color: var(--typo-tittle);
@@ -172,6 +237,22 @@ main {
                 grid-template-columns: repeat(5, 1fr);
                 gap: 30px;
                 margin-bottom: 40px;
+
+                @media  screen and (max-width: 768px) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+
+                @media  screen and (max-width: 580px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media  screen and (max-width: 460px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media  screen and (max-width: 340px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
 
                 div {
                     display: flex;
@@ -200,6 +281,22 @@ main {
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
             padding: 80px;
+
+            @media  screen and (max-width: 768px) {
+                padding: 80px 40px;
+            }
+
+            @media  screen and (max-width: 440px) {
+                padding: 80px 10px;
+            }
+
+            @media  screen and (max-width: 380px) {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+
+            @media  screen and (max-width: 340px) {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
 
             
             .project {
@@ -271,6 +368,10 @@ footer {
     font-size: 20px;
     color: var(--typo-tittle);
     font-weight: bold;
+
+    @media  screen and (max-width: 768px) {
+        padding: 25px 40px;
+    }
 
     a {
         padding-right: 20px;

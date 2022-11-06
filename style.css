@@ -30,14 +30,34 @@ nav {
   padding: 15px 80px;
   background-color: var(--header-footer);
 }
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 440px) {
+  nav {
+    padding: 10px 10px;
+  }
+}
 nav div {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
+@media screen and (max-width: 460px) {
+  nav div {
+    gap: 0.5rem;
+  }
+}
 nav div h1 {
   font-size: 24px;
   color: var(--typo-tittle);
+}
+@media screen and (max-width: 360px) {
+  nav div h1 {
+    display: none;
+  }
 }
 nav img {
   width: 50px;
@@ -48,6 +68,22 @@ nav img {
 nav ul {
   display: flex;
   gap: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  nav ul {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 nav ul li {
   list-style-type: none;
@@ -81,15 +117,40 @@ main .s1 {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  main .s1 {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main .s1 {
+    padding: 0 10px;
+  }
+}
 main .s1 div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20rem;
 }
+@media screen and (max-width: 1024px) {
+  main .s1 div {
+    gap: 8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .s1 div {
+    gap: 2rem;
+  }
+}
 main .s1 div h4 {
   font-size: 48px;
   color: #030f03;
+}
+@media screen and (max-width: 700px) {
+  main .s1 div h4 {
+    display: none;
+  }
 }
 main .s1 div .card {
   display: flex;
@@ -109,9 +170,19 @@ main .s1 div .card .photo {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 370px) {
+  main .s1 div .card .photo {
+    width: 150px;
+  }
+}
 main .s1 div .card .info {
   display: block;
   padding: 20px;
+}
+@media screen and (max-width: 370px) {
+  main .s1 div .card .info {
+    padding: 10px;
+  }
 }
 main .s1 div .card .info h3 {
   font-size: 20px;
@@ -130,6 +201,16 @@ main .s1 div .card .info p {
 main .s2 .skill {
   padding: 0 80px;
 }
+@media screen and (max-width: 768px) {
+  main .s2 .skill {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main .s2 .skill {
+    padding: 0 10px;
+  }
+}
 main .s2 .skill h3 {
   font-size: 24px;
   color: var(--typo-tittle);
@@ -141,6 +222,26 @@ main .s2 .skill .grid-skill {
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  main .s2 .skill .grid-skill {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 580px) {
+  main .s2 .skill .grid-skill {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 460px) {
+  main .s2 .skill .grid-skill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 340px) {
+  main .s2 .skill .grid-skill {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 main .s2 .skill .grid-skill div {
   display: flex;
@@ -162,6 +263,26 @@ main .s3 .grid {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   padding: 80px;
+}
+@media screen and (max-width: 768px) {
+  main .s3 .grid {
+    padding: 80px 40px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main .s3 .grid {
+    padding: 80px 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main .s3 .grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+@media screen and (max-width: 340px) {
+  main .s3 .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 main .s3 .grid .project {
   position: relative;
@@ -221,6 +342,11 @@ footer {
   font-size: 20px;
   color: var(--typo-tittle);
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 25px 40px;
+  }
 }
 footer a {
   padding-right: 20px;
