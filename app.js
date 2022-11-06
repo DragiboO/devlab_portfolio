@@ -6,29 +6,27 @@ function d_l_mode() {
 
     mode.addEventListener('click', function() {
         if (modem == 0) {
-            mode.src = "img/lune.png"
+            mode.src = "img/dark.png"
             modem = 1
 
-            r.style.setProperty("--main-color-1", "#114a0d");
-            r.style.setProperty("--main-color-2", "#1e611e");
-            r.style.setProperty("--main-color-3", "#2a9e2a");
-            r.style.setProperty("--main-color-4", "#21541e");
+            r.style.setProperty("--header-footer", "#021402");
 
-            r.style.setProperty("--main-typo-1", "#6be16b");
-            r.style.setProperty("--main-typo-2", "#23b323");
-            r.style.setProperty("--main-typo-3", "#1f951f");
+            r.style.setProperty("--main-color-1", "#052905");
+            r.style.setProperty("--main-color-2", "#031403");
+
+            r.style.setProperty("--typo-tittle", "#66b866");
+            r.style.setProperty("--typo-text", "#a4cca0");
         } else {
-            mode.src = "img/soleil.png"
+            mode.src = "img/light.png"
             modem = 0
 
-            r.style.setProperty("--main-color-1", "#6be16b");
-            r.style.setProperty("--main-color-2", "#23b323");
-            r.style.setProperty("--main-color-3", "#1f951f");
-            r.style.setProperty("--main-color-4", "#b2e8b2");
+            r.style.setProperty("--header-footer", "#a6eda6");
 
-            r.style.setProperty("--main-typo-1", "#062304");
-            r.style.setProperty("--main-typo-2", "#0b3208");
-            r.style.setProperty("--main-typo-3", "#114a0d");
+            r.style.setProperty("--main-color-1", "#e1f9e1");
+            r.style.setProperty("--main-color-2", "#c4f3c4");
+
+            r.style.setProperty("--typo-tittle", "#030f03");
+            r.style.setProperty("--typo-text", "#10330d");
         }
     })
 }

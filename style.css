@@ -1,12 +1,9 @@
 :root {
-  --main-color-1: #6be16b;
-  --main-color-2: #35ca35;
-  --main-color-3: #2a9e2a;
-  --main-color-4: #b2e8b2;
-  --main-typo-1: #062304;
-  --main-typo-2: #0b3208;
-  --main-typo-3: #114a0d;
-  color: #21541e;
+  --header-footer: #a6eda6;
+  --main-color-1: #e1f9e1;
+  --main-color-2: #c4f3c4;
+  --typo-tittle: #030f03;
+  --typo-text: #10330d;
 }
 
 * {
@@ -18,12 +15,10 @@
 }
 
 body {
-  background: var(--main-color-4);
+  background: var(--main-color-1);
 }
 
 header {
-  position: sticky;
-  top: 0;
   box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,19 +26,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 80px;
-  background-color: var(--main-color-1);
+  padding: 15px 80px;
+  background-color: var(--header-footer);
 }
 nav div {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 nav div h1 {
   font-size: 24px;
-  background: linear-gradient(45deg, var(--main-typo-1) 0%, var(--main-typo-3) 70%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--typo-tittle);
 }
 nav img {
   width: 50px;
@@ -61,7 +54,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--main-typo-1);
+  color: var(--typo-tittle);
   font-size: 24px;
 }
 
@@ -86,11 +79,11 @@ main .s1 .info div {
 }
 main .s1 .info div h2 {
   font-size: 24px;
-  color: var(--main-typo-2);
+  color: var(--typo-tittle);
   margin-bottom: 24px;
 }
 main .s1 .info div p {
-  color: var(--main-typo-1);
+  color: var(--typo-text);
 }
 main .s1 .info img {
   width: 80%;
@@ -115,13 +108,13 @@ main .s2 .grid {
   padding: 80px;
 }
 main .s2 .grid .project {
-  background-color: var(--main-color-3);
+  background-color: black;
   aspect-ratio: 1;
 }
 
 footer {
   height: 35vh;
-  background-color: var(--main-color-1);
+  background-color: var(--header-footer);
 }
 
 /*# sourceMappingURL=style.css.map */
