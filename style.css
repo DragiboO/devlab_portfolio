@@ -203,10 +203,29 @@ main .s3 .grid .info-project a {
 main .s3 .grid .info-project:hover {
   opacity: 0.8;
 }
+main .s3 .grid .project-end {
+  text-align: center;
+  padding: 40px;
+}
+main .s3 .grid .project-end p {
+  font-size: 24px;
+  color: var(--typo-tittle);
+}
 
 footer {
-  height: 35vh;
   background-color: var(--header-footer);
+  display: flex;
+  padding: 40px 80px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: var(--typo-tittle);
+  font-weight: bold;
+}
+footer a {
+  padding-right: 20px;
+  color: var(--typo-tittle);
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
